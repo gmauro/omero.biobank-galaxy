@@ -1,0 +1,9 @@
+docker build -t omero.biobank-galaxy .
+
+docker run -i -t --name obg -p 8080:80 omero.biobank-galaxy
+
+docker exec obg /galaxy-central/hack_galaxy.sh
+
+then in localhost:8080, go (as admin@galaxy.org, pw admin) in user -> preferences -> Manage your information
+
+and will be a new form to input host, username and password for the Omero server

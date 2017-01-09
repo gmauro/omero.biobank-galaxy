@@ -1,0 +1,5 @@
+user:
+  form:
+    - label: Omero Host
+    - label: Omero User
+    - label: Omero Password
